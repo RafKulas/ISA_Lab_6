@@ -1,0 +1,260 @@
+{
+	"id": "51142192-033e-4c84-9197-3c2fa18a7051",
+	"name": "isa",
+	"timestamp": "2020-11-01T18:20:16.181Z",
+	"collection_id": "bf9e074f-f355-4e7a-b017-ac2dfc9f68a1",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 0,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "6a6b81c0-d227-4fce-8cb7-081edb8b3426",
+			"name": "get students",
+			"url": "http://localhost:8080/api/students",
+			"time": 768,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				768
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "8579dac3-9396-4190-9222-0f5e9f92f003",
+			"name": "get 175750 student",
+			"url": "http://localhost:8080/api/students/175750",
+			"time": 44,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				44
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "1cc12f90-26f8-4a45-b3b1-b273fa58f910",
+			"name": "get fields of studies",
+			"url": "http://localhost:8080/api/students/fieldOfStudies",
+			"time": 20,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				20
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "bd84abb2-15d3-461f-9270-b89eedde6f4f",
+			"name": "create student",
+			"url": "http://localhost:8080/api/students",
+			"time": 91,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				91
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "0aa58ae6-2863-4f9d-916a-f3c7eb2ca230",
+			"name": "delete student",
+			"url": "http://localhost:8080/api/students/156789",
+			"time": 34,
+			"responseCode": {
+				"code": 202,
+				"name": "Accepted"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				34
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "cc0f8a22-1ac3-471c-b7e3-d1c5f7901043",
+			"name": "update student",
+			"url": "http://localhost:8080/api/students/101010",
+			"time": 23,
+			"responseCode": {
+				"code": 202,
+				"name": "Accepted"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				23
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "e9e3542e-2cf9-483a-8175-5882eee73da9",
+			"name": "get faculties",
+			"url": "http://localhost:8080/api/faculties",
+			"time": 21,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				21
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "8e73fd66-bd9d-4eea-91c2-1b5229c64dff",
+			"name": "get OiO faculty",
+			"url": "http://localhost:8080/api/faculties/OIO",
+			"time": 23,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				23
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "debf0169-a9af-4fe0-87e1-436d7134c423",
+			"name": "create faculty",
+			"url": "http://localhost:8080/api/faculties",
+			"time": 21,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				21
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "33ffbdbb-cfdb-4522-90dc-c90609812a0e",
+			"name": "delete faculty",
+			"url": "http://localhost:8080/api/faculties/OIO",
+			"time": 35,
+			"responseCode": {
+				"code": 202,
+				"name": "Accepted"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				35
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "19ec750e-59cb-459b-9d73-7ff5511209a4",
+			"name": "update faculty",
+			"url": "http://localhost:8080/api/faculties/EIA",
+			"time": 13,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				13
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 1093,
+	"collection": {
+		"requests": [
+			{
+				"id": "6a6b81c0-d227-4fce-8cb7-081edb8b3426",
+				"method": "GET"
+			},
+			{
+				"id": "8579dac3-9396-4190-9222-0f5e9f92f003",
+				"method": "GET"
+			},
+			{
+				"id": "1cc12f90-26f8-4a45-b3b1-b273fa58f910",
+				"method": "GET"
+			},
+			{
+				"id": "bd84abb2-15d3-461f-9270-b89eedde6f4f",
+				"method": "POST"
+			},
+			{
+				"id": "0aa58ae6-2863-4f9d-916a-f3c7eb2ca230",
+				"method": "DELETE"
+			},
+			{
+				"id": "cc0f8a22-1ac3-471c-b7e3-d1c5f7901043",
+				"method": "PUT"
+			},
+			{
+				"id": "e9e3542e-2cf9-483a-8175-5882eee73da9",
+				"method": "GET"
+			},
+			{
+				"id": "8e73fd66-bd9d-4eea-91c2-1b5229c64dff",
+				"method": "GET"
+			},
+			{
+				"id": "debf0169-a9af-4fe0-87e1-436d7134c423",
+				"method": "POST"
+			},
+			{
+				"id": "33ffbdbb-cfdb-4522-90dc-c90609812a0e",
+				"method": "DELETE"
+			},
+			{
+				"id": "19ec750e-59cb-459b-9d73-7ff5511209a4",
+				"method": "GET"
+			}
+		]
+	}
+}

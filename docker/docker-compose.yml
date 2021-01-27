@@ -1,0 +1,33 @@
+version: '3.5'
+
+services:
+  university:
+    build: university
+    depends_on:
+      mariadb:
+        condition: service_healthy
+    environment:
+      - spring.datasource.url=jdbc:mariadb://mariadb/university?createDatabaseIfNotExist=true
+      - spring.datasource.username=root
+      - spring.datasource.password=root
+      - file.upload=/application/logos
+      - server.port=8080
+    volumes:
+      - ./volumes/logos:/application/logos
+    ports:
+      - 9300:8080
+
+  mariadb:
+    image: mariadb
+    restart: on-failure
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=root
+    healthcheck:
+      test: "mysql -p$$MYSQL_ROOT_PASSWORD -e 'SELECT 1;'"
+      timeout: 30s
+      interval: 8s
+      retries: 10
+
+networks:
+  default:
